@@ -2,7 +2,7 @@
 
 > ZentiqOne is a Banking & Payment Technology Engineering Platform. that helps Banks, FinTechs, NBFCs, Payment Aggregators, Payment Gateways, and Enterprises design, build, integrate, launch, and scale digital payment and banking solutions.
 
-ZentiqOne is not a general software or IT company — it specializes exclusively in banking and payments technology, covering everything from API integrations with banks and payment networks to end-to-end platform development, compliance consulting, certification support, and managed technology services. ZentiqOne is a technology and consulting partner — not a bank, Payment Aggregator, Payment Gateway, or licensed financial entity — and works alongside the licensed institutions in this ecosystem.
+ZentiqOne is not a general software or IT Platform — it specializes exclusively in banking and payments technology, covering everything from API integrations with banks and payment networks to end-to-end platform development, compliance consulting, certification support, and managed technology services. ZentiqOne is a technology and consulting partner — not a bank, Payment Aggregator, Payment Gateway, or licensed financial entity — and works alongside the licensed institutions in this ecosystem.
 
 ## Services
 
@@ -28,7 +28,7 @@ ZentiqOne is not a general software or IT company — it specializes exclusively
 - [Choosing an Acquiring Bank or PSP](https://www.zentiqone.com/learn-choosing-acquiring-bank-psp.html): A practical evaluation guide
 - [Payment & Banking Glossary](https://www.zentiqone.com/glossary.html): Short definitions of UPI, NPCI, BBPS, NACH, AEPS, FASTag, CKYC, KYC, AML, PA, PG, ISO 8583, ISO 20022, CBS, NBFC, PSP, RBI, RuPay, SLA, and more
 
-## Company
+## Platform
 
 - [Services Overview](https://www.zentiqone.com/services.html): Full service portfolio hub page
 - [About ZentiqOne](https://www.zentiqone.com/about.html): Positioning, approach, and delivery process
