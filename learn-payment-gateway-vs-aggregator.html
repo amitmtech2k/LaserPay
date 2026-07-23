@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Gateway vs. Payment Aggregator: What's the Difference? | LaserPay</title>
+<meta name="description" content="A clear, practical explanation of the difference between a Payment Gateway and a Payment Aggregator — what each does, who holds funds, and how Indian regulation treats them.">
+<link rel="canonical" href="https://www.laserpay.in/learn-payment-gateway-vs-aggregator.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Payment Gateway vs. Payment Aggregator: What's the Difference? | LaserPay">
+<meta property="og:description" content="A clear, practical explanation of the difference between a Payment Gateway and a Payment Aggregator — what each does, who holds funds, and how Indian regulation treats them.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.laserpay.in/learn-payment-gateway-vs-aggregator.html">
+<meta property="og:site_name" content="LaserPay">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Payment Gateway vs. Payment Aggregator: What's the Difference? | LaserPay">
+<meta name="twitter:description" content="A clear, practical explanation of the difference between a Payment Gateway and a Payment Aggregator — what each does, who holds funds, and how Indian regulation treats them.">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LaserPay",
+  "url": "https://www.laserpay.in/",
+  "description": "LaserPay is a Banking & Payment Technology Engineering company. LaserPay helps Banks, FinTechs, NBFCs, Payment Aggregators, Payment Gateways, and Enterprises design, build, integrate, launch, and scale digital payment and banking solutions.",
+  "logo": "https://www.laserpay.in/assets/logo.png",
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@laserpay.in",
+    "telephone": "+91-00000-00000"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Payment Gateway vs. Payment Aggregator: What's the Difference?",
+  "description": "A clear, practical explanation of the difference between a Payment Gateway and a Payment Aggregator — what each does, who holds funds, and how Indian regulation treats them.",
+  "author": { "@type": "Organization", "name": "LaserPay" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LaserPay",
+    "logo": { "@type": "ImageObject", "url": "https://www.laserpay.in/assets/logo.png" }
+  },
+  "datePublished": "2026-07-23",
+  "dateModified": "2026-07-23",
+  "mainEntityOfPage": "https://www.laserpay.in/learn-payment-gateway-vs-aggregator.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.laserpay.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://www.laserpay.in/learn.html" },
+    { "@type": "ListItem", "position": 3, "name": "Payment Gateway vs. Payment Aggregator", "item": "https://www.laserpay.in/learn-payment-gateway-vs-aggregator.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a single company be both a Payment Gateway and a Payment Aggregator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many payment companies combine both functions — offering the transaction-processing technology of a gateway alongside the merchant onboarding and fund-holding functions of an aggregator. In India, the fund-holding part of that combined business is generally the part subject to Payment Aggregator regulation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a Payment Gateway need an RBI authorization?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pure technology-only Payment Gateway that never holds merchant funds is generally treated differently from a Payment Aggregator, which does require RBI authorization. Rules and their applicability can change, so specific cases should always be confirmed with legal or compliance counsel against current RBI guidelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is cheaper to integrate, a Gateway or an Aggregator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cost depends more on transaction volume, chosen partner, and existing banking relationships than on the model itself. Aggregators often bundle onboarding work that would otherwise require a separate acquiring-bank relationship, which can reduce effort even if headline pricing looks similar."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">LaserPay</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="learn.html">Learn</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn nav-cta">Schedule a Consultation</a>
+      </div>
+    </nav>
+  </header>
+<main id="main">
+
+  <section class="article-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="learn.html">Learn</a> / Payment Gateway vs. Payment Aggregator</nav>
+      <span class="topic-tag">Payments 101</span>
+      <h1>Payment Gateway vs. Payment Aggregator: What's the Difference?</h1>
+      <div class="article-meta"><span>LaserPay Learn</span><span>&middot;</span><span>~6 min read</span><span>&middot;</span><span>Updated 23 July 2026</span></div>
+      <p class="lead">A Payment Gateway is the technology layer that authorizes, encrypts, and routes a single transaction between a customer, a merchant, and a bank. A Payment Aggregator is a regulated entity that onboards many merchants under one umbrella and briefly holds their funds before settling them. The two roles are often bundled into one product, but they solve different problems and carry different regulatory obligations in India.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container prose">
+
+      <h2>What Is a Payment Gateway?</h2>
+      <p>A Payment Gateway is, at its core, a technical component. When a customer enters card details, chooses UPI, or selects net banking at checkout, the gateway is the system that captures that payment instruction, encrypts it, and routes it onward — typically to an acquiring bank or a card network — for authorization.</p>
+      <p>A gateway's job ends once it has reliably done three things: authorized the transaction with the appropriate bank or network, encrypted sensitive data in transit so it is never exposed in plain text, and returned a success or failure response to the merchant's checkout flow in near real time. A standalone gateway does not, by itself, need to hold a merchant's money — it typically sits on top of a merchant account that the merchant already has with an acquiring bank.</p>
+      <p>Because a gateway is fundamentally a piece of transaction-processing infrastructure, it has historically been treated as a technology provider rather than as a separately licensed financial entity — though the exact regulatory line depends on whether the same company also performs aggregator-like functions, discussed below.</p>
+
+      <h2>What Is a Payment Aggregator?</h2>
+      <p>A Payment Aggregator (PA) is a different kind of business. Rather than simply routing a transaction, a PA onboards multiple merchants under its own umbrella arrangement with banks, collects payments on their behalf, and briefly holds those funds — typically in a nodal or escrow account — before settling the net amount to each merchant's bank account.</p>
+      <p>This fund-holding role is precisely why Payment Aggregators are regulated by the Reserve Bank of India (RBI) as a distinct category, separate from pure technology providers. A PA's ability to hold merchant funds, even briefly, is treated as a financial activity that warrants direct regulatory oversight, authorization, and ongoing compliance obligations.</p>
+      <p>For merchants, the practical benefit of the aggregator model is simplified onboarding: instead of negotiating a direct merchant account with an acquiring bank, a business can sign up with an aggregator and start accepting payments under the aggregator's existing banking and network relationships.</p>
+
+      <h2>The Key Differences</h2>
+      <p>The table below summarizes how the two roles typically differ. Because many real-world products combine elements of both, treat this as a description of the two underlying functions rather than a strict label for any single company.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>Payment Gateway</th>
+            <th>Payment Aggregator</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Primary role</td>
+            <td>Authorizes, encrypts, and routes individual transactions</td>
+            <td>Onboards merchants and briefly holds/settles their funds</td>
+          </tr>
+          <tr>
+            <td>Holds merchant funds?</td>
+            <td>No</td>
+            <td>Yes, briefly, via a nodal or escrow account</td>
+          </tr>
+          <tr>
+            <td>Who merchants contract with</td>
+            <td>Often still needs a separate acquiring-bank merchant relationship</td>
+            <td>Contracts primarily with the aggregator</td>
+          </tr>
+          <tr>
+            <td>Regulatory treatment in India</td>
+            <td>Generally treated as a technology layer</td>
+            <td>Regulated by RBI as a distinct, authorized entity type</td>
+          </tr>
+          <tr>
+            <td>Best suited for</td>
+            <td>Businesses with an existing acquiring or merchant-account relationship</td>
+            <td>Businesses that want a single onboarding relationship and faster go-live</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Which One Do You Need?</h2>
+      <p>The right fit generally depends on the size and structure of the business collecting payments:</p>
+      <ul>
+        <li><strong>Large enterprises with existing banking relationships</strong> may only need a gateway integration layered on top of merchant accounts they already hold with one or more acquiring banks.</li>
+        <li><strong>Small and medium merchants, startups, and new online sellers</strong> usually find the aggregator model simpler, since it bundles onboarding, KYC, and settlement into a single relationship rather than requiring a separate bank tie-up.</li>
+        <li><strong>Marketplaces and platforms with sub-merchants</strong> — businesses that collect payments on behalf of many smaller sellers — typically need aggregator-like fund-holding and split-settlement capability, since a simple gateway is not designed to hold or redistribute funds across sub-merchants.</li>
+      </ul>
+      <p>In practice, many payment products marketed as "payment gateways" in India are commercially bundled with aggregator functionality, since most merchants want a single sign-up rather than separately arranging technology and banking relationships. Understanding the underlying distinction still matters — it shapes onboarding timelines, contractual relationships, and where regulatory obligations sit.</p>
+
+      <div class="callout">
+        <p><strong>A note on regulation.</strong> This article is general education, not legal or compliance advice. RBI guidelines for Payment Aggregators and Payment Gateways have evolved over time and continue to be refined. Always confirm current requirements with qualified legal counsel and the latest RBI circulars before making licensing or structuring decisions.</p>
+      </div>
+
+      <div class="related-box">
+        <h3>How LaserPay Can Help</h3>
+        <p class="text-muted">LaserPay is a technology and consulting partner, not a bank, Payment Aggregator, Payment Gateway, or licensed financial entity. We help the licensed banks, NBFCs, PAs, and PGs in this ecosystem design, build, integrate, and operate their platforms.</p>
+        <ul>
+          <li><a href="service-payment-platforms.html"><strong>Payment Platform Development →</strong></a> engineering payment gateways, aggregation platforms, and orchestration layers.</li>
+          <li><a href="service-merchant-enablement.html"><strong>Merchant Enablement →</strong></a> hands-on support with onboarding, bank introductions, and certification.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-alt reveal">
+    <div class="container">
+      <div class="section-head left"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Can a single company be both a Payment Gateway and a Payment Aggregator?</summary>
+          <p>Yes. Many payment companies combine both functions — offering the transaction-processing technology of a gateway alongside the merchant onboarding and fund-holding functions of an aggregator. In India, the fund-holding part of that combined business is generally the part subject to Payment Aggregator regulation.</p>
+        </details>
+        <details>
+          <summary>Does a Payment Gateway need an RBI authorization?</summary>
+          <p>A pure technology-only Payment Gateway that never holds merchant funds is generally treated differently from a Payment Aggregator, which does require RBI authorization. Rules and their applicability can change, so specific cases should always be confirmed with legal or compliance counsel against current RBI guidelines.</p>
+        </details>
+        <details>
+          <summary>Which is cheaper to integrate, a Gateway or an Aggregator?</summary>
+          <p>Cost depends more on transaction volume, chosen partner, and existing banking relationships than on the model itself. Aggregators often bundle onboarding work that would otherwise require a separate acquiring-bank relationship, which can reduce effort even if headline pricing looks similar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="container text-center">
+      <h2>Building or Choosing a Payment Platform?</h2>
+      <p>Schedule a consultation and talk to LaserPay about your payment platform or merchant onboarding needs.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+
+</main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LaserPay</div>
+        <p class="footer-tagline">We engineer payment ecosystems.</p>
+        <p>LaserPay is a Banking &amp; Payment Technology Engineering company helping Banks, FinTechs, NBFCs, Payment Aggregators, Payment Gateways, and Enterprises design, build, integrate, launch, and scale digital payment and banking solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-payment-platforms.html">Payment Platform Development</a></li>
+          <li><a href="service-banking-solutions.html">Banking Solutions</a></li>
+          <li><a href="service-api-integrations.html">API Integrations</a></li>
+          <li><a href="service-merchant-enablement.html">Merchant Enablement</a></li>
+          <li><a href="service-banking-consulting.html">Banking Consulting</a></li>
+          <li><a href="service-managed-services.html">Managed Technology Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="learn-payment-gateway-vs-aggregator.html">Payment Gateway vs Aggregator</a></li>
+          <li><a href="learn-how-upi-works.html">How UPI Works</a></li>
+          <li><a href="learn-settlement-escrow-models.html">Settlement &amp; Escrow</a></li>
+          <li><a href="learn-iso8583-vs-iso20022.html">ISO 8583 vs ISO 20022</a></li>
+          <li><a href="learn.html">View all articles →</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@laserpay.in">hello@laserpay.in</a></li>
+          <li>+91 00000 00000</li>
+          <li>India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 LaserPay. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

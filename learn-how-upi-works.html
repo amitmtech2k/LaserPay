@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How UPI Works: NPCI, PSPs, and the UPI Architecture Explained | LaserPay</title>
+<meta name="description" content="How UPI actually works: NPCI's role as the switch, PSPs, VPAs, and the step-by-step path a payment takes between apps, banks, and NPCI, in real time.">
+<link rel="canonical" href="https://www.laserpay.in/learn-how-upi-works.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="How UPI Works: NPCI, PSPs, and the UPI Architecture Explained | LaserPay">
+<meta property="og:description" content="How UPI actually works: NPCI's role as the switch, PSPs, VPAs, and the step-by-step path a payment takes between apps, banks, and NPCI, in real time.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.laserpay.in/learn-how-upi-works.html">
+<meta property="og:site_name" content="LaserPay">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How UPI Works: NPCI, PSPs, and the UPI Architecture Explained | LaserPay">
+<meta name="twitter:description" content="How UPI actually works: NPCI's role as the switch, PSPs, VPAs, and the step-by-step path a payment takes between apps, banks, and NPCI, in real time.">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LaserPay",
+  "url": "https://www.laserpay.in/",
+  "description": "LaserPay is a Banking & Payment Technology Engineering company. LaserPay helps Banks, FinTechs, NBFCs, Payment Aggregators, Payment Gateways, and Enterprises design, build, integrate, launch, and scale digital payment and banking solutions.",
+  "logo": "https://www.laserpay.in/assets/logo.png",
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@laserpay.in",
+    "telephone": "+91-00000-00000"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "How UPI Works: NPCI, PSPs, and the UPI Architecture Explained",
+  "description": "How UPI actually works: NPCI's role as the switch, PSPs, VPAs, and the step-by-step path a payment takes between apps, banks, and NPCI, in real time.",
+  "author": { "@type": "Organization", "name": "LaserPay" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LaserPay",
+    "logo": { "@type": "ImageObject", "url": "https://www.laserpay.in/assets/logo.png" }
+  },
+  "datePublished": "2026-07-23",
+  "dateModified": "2026-07-23",
+  "mainEntityOfPage": "https://www.laserpay.in/learn-how-upi-works.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.laserpay.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Learn", "item": "https://www.laserpay.in/learn.html" },
+    { "@type": "ListItem", "position": 3, "name": "How UPI Works", "item": "https://www.laserpay.in/learn-how-upi-works.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a VPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A VPA (Virtual Payment Address), often called a UPI ID, is a portable identifier - for example name@bank - that maps to a specific bank account. It lets people send and receive money without ever sharing their actual account number or IFSC code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is UPI only peer-to-peer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. UPI supports person-to-person (P2P) transfers, but it is used just as heavily for person-to-merchant (P2M) payments - in-store QR codes, e-commerce checkout, bill payments, and recurring payments via UPI AutoPay all run on the same underlying rail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a business start accepting UPI payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most businesses accept UPI through a payment gateway or aggregator that already has the banking and NPCI-facing integrations in place, rather than integrating directly with NPCI. The business typically only needs to integrate with that gateway or aggregator's API and complete the relevant merchant onboarding and KYC."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="index.html" class="logo">LaserPay</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="learn.html">Learn</a>
+        <a href="industries.html">Industries</a>
+        <a href="about.html">About</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn nav-cta">Schedule a Consultation</a>
+      </div>
+    </nav>
+  </header>
+<main id="main">
+
+  <section class="article-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="learn.html">Learn</a> / How UPI Works</nav>
+      <span class="topic-tag">Payments 101</span>
+      <h1>How UPI Works: NPCI, PSPs, and the UPI Architecture Explained</h1>
+      <div class="article-meta"><span>LaserPay Learn</span><span>&middot;</span><span>~6 min read</span><span>&middot;</span><span>Updated 23 July 2026</span></div>
+      <p class="lead">UPI (Unified Payments Interface) is India's real-time payment system, built and operated by the National Payments Corporation of India (NPCI), that moves money directly between bank accounts using a simple ID instead of an account number and IFSC code. Behind every UPI payment sits a coordinated handoff between apps, PSPs, NPCI's central switch, and banks. This article explains who the players are and what actually happens, step by step, when someone taps "Pay."</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="container prose">
+
+      <h2>What Is UPI?</h2>
+      <p>UPI is a real-time payment system built and operated by NPCI that allows two bank accounts to exchange money directly, in seconds, using a simple identifier - a UPI ID or Virtual Payment Address (VPA) - instead of a full account number and IFSC code. Since its launch, UPI has become the default way most people in India move money between banks, pay merchants, and pay each other.</p>
+      <p>Unlike a closed card network, UPI is a switch that any participating bank, or licensed non-bank participant working through a bank, can plug into under a common set of rules. That openness is a large part of why UPI adoption spread so quickly across banks, FinTechs, and merchants of every size.</p>
+
+      <h2>The Key Players in a UPI Transaction</h2>
+      <p>A UPI payment feels instantaneous to the user, but several distinct participants are involved behind the scenes:</p>
+      <ul>
+        <li><strong>NPCI</strong> - the switch and umbrella operator that owns the UPI system, sets the rules participants must follow, and routes messages between the payer's and payee's PSPs.</li>
+        <li><strong>The payer's PSP (Payment Service Provider)</strong> - the bank behind the payer's UPI app, responsible for processing the debit instruction on the payer's behalf.</li>
+        <li><strong>The payee's PSP</strong> - the equivalent participant on the receiving side, responsible for presenting the credit instruction for the payee's account.</li>
+        <li><strong>The remitter bank</strong> - the bank where the payer's account actually sits.</li>
+        <li><strong>The beneficiary bank</strong> - the bank where the payee's account sits.</li>
+        <li><strong>UPI apps and TPAPs (Third-Party App Providers)</strong> - the customer-facing apps that capture the payment instruction and pass it to their PSP for processing.</li>
+      </ul>
+
+      <h2>A UPI Transaction, Step by Step</h2>
+      <p>Stripped down to its mechanics, a single UPI payment moves through a consistent sequence:</p>
+      <ol>
+        <li><strong>VPA/UPI ID resolution.</strong> The payer enters the payee's VPA (or scans a QR code), and the app resolves which PSP and bank sit behind that identifier.</li>
+        <li><strong>Request to the payer's PSP.</strong> The payer authenticates with their MPIN, and the signed request is passed to the payer's PSP.</li>
+        <li><strong>NPCI switch.</strong> The payer's PSP forwards the request to NPCI, which validates it and routes it onward to the payee's PSP.</li>
+        <li><strong>Beneficiary PSP and bank.</strong> The payee's PSP receives the request and coordinates with the beneficiary bank to accept the incoming credit.</li>
+        <li><strong>Debit and credit at the respective banks.</strong> The remitter bank debits the payer's account and the beneficiary bank credits the payee's account, coordinated through NPCI's messaging so both legs complete together.</li>
+        <li><strong>Confirmation back to both apps.</strong> NPCI relays the success or failure response back through both PSPs to the payer's and payee's apps, typically within seconds.</li>
+      </ol>
+
+      <h2>Key Concepts to Know</h2>
+      <ul>
+        <li><strong>VPA / UPI ID.</strong> A portable identifier, such as name@bank, that maps to an underlying bank account so users never need to share an account number or IFSC code.</li>
+        <li><strong>MPIN.</strong> A personal PIN set by the user with their bank that authorizes a UPI debit - a separate credential from an ATM PIN.</li>
+        <li><strong>Collect vs. Pay.</strong> "Pay" is a push transaction the payer initiates; "Collect" is a pull request the payee sends, which the payer must separately approve before any money moves. Both run on the same underlying network.</li>
+        <li><strong>UPI AutoPay.</strong> A mandate-based flow for recurring payments - subscriptions, SIPs, EMIs - where the payer authorizes a standing instruction once, and subsequent debits within the agreed limits happen automatically without a fresh manual approval each time.</li>
+      </ul>
+
+      <h2>Why UPI Matters for Businesses Building Payment Products</h2>
+      <p>For businesses accepting or building on top of UPI, three qualities usually matter most: near-instant movement of funds and confirmation between banks, materially lower per-transaction cost compared with card processing, and reach into a base of bank accounts and users that is close to universal across India. That combination has made UPI acceptance close to a baseline expectation at checkout, and made "UPI-first" design - built around VPAs, QR codes, and intent/collect flows rather than card fields - a common pattern for new payment products.</p>
+
+      <div class="related-box">
+        <h3>How LaserPay Can Help</h3>
+        <p class="text-muted">LaserPay is a technology and consulting partner, not a bank, PSP, or licensed financial entity. We help banks, FinTechs, and payment businesses design and build the UPI-integrated products that sit on top of this ecosystem.</p>
+        <ul>
+          <li><a href="service-api-integrations.html"><strong>API Integrations →</strong></a> integrating UPI, NPCI-facing rails, and banking APIs into your product.</li>
+          <li><a href="service-payment-platforms.html"><strong>Payment Platform Development →</strong></a> engineering checkout, collection, and payout flows around UPI.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-alt reveal">
+    <div class="container">
+      <div class="section-head left"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>What is a VPA?</summary>
+          <p>A VPA (Virtual Payment Address), often called a UPI ID, is a portable identifier - for example name@bank - that maps to a specific bank account. It lets people send and receive money without ever sharing their actual account number or IFSC code.</p>
+        </details>
+        <details>
+          <summary>Is UPI only peer-to-peer?</summary>
+          <p>No. UPI supports person-to-person (P2P) transfers, but it is used just as heavily for person-to-merchant (P2M) payments - in-store QR codes, e-commerce checkout, bill payments, and recurring payments via UPI AutoPay all run on the same underlying rail.</p>
+        </details>
+        <details>
+          <summary>How does a business start accepting UPI payments?</summary>
+          <p>Most businesses accept UPI through a payment gateway or aggregator that already has the banking and NPCI-facing integrations in place, rather than integrating directly with NPCI. The business typically only needs to integrate with that gateway or aggregator's API and complete the relevant merchant onboarding and KYC.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="container text-center">
+      <h2>Building a Product on Top of UPI?</h2>
+      <p>Schedule a consultation and talk to LaserPay about your UPI integration or payment platform needs.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+
+</main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">LaserPay</div>
+        <p class="footer-tagline">We engineer payment ecosystems.</p>
+        <p>LaserPay is a Banking &amp; Payment Technology Engineering company helping Banks, FinTechs, NBFCs, Payment Aggregators, Payment Gateways, and Enterprises design, build, integrate, launch, and scale digital payment and banking solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-payment-platforms.html">Payment Platform Development</a></li>
+          <li><a href="service-banking-solutions.html">Banking Solutions</a></li>
+          <li><a href="service-api-integrations.html">API Integrations</a></li>
+          <li><a href="service-merchant-enablement.html">Merchant Enablement</a></li>
+          <li><a href="service-banking-consulting.html">Banking Consulting</a></li>
+          <li><a href="service-managed-services.html">Managed Technology Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="learn-payment-gateway-vs-aggregator.html">Payment Gateway vs Aggregator</a></li>
+          <li><a href="learn-how-upi-works.html">How UPI Works</a></li>
+          <li><a href="learn-settlement-escrow-models.html">Settlement &amp; Escrow</a></li>
+          <li><a href="learn-iso8583-vs-iso20022.html">ISO 8583 vs ISO 20022</a></li>
+          <li><a href="learn.html">View all articles →</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@laserpay.in">hello@laserpay.in</a></li>
+          <li>+91 00000 00000</li>
+          <li>India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 LaserPay. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
