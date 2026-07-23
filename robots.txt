@@ -46,4 +46,4 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
-Sitemap: https://www.laserpay.com/sitemap.xml
+Sitemap: https://www.laserpay.in/sitemap.xml

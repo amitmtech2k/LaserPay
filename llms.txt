@@ -6,17 +6,17 @@ LaserPay is not a general software or IT company — it specializes exclusively 
 
 ## Services
 
-- [Payment Platform Development](https://www.laserpay.com/service-payment-platforms.html): Payment gateways, payment aggregation, orchestration, wallets, UPI, BBPS, escrow, collections, disbursements
-- [Banking Solutions](https://www.laserpay.com/service-banking-solutions.html): Internet and mobile banking, digital onboarding, video KYC, corporate banking, digital lending, loan origination
-- [API Integrations](https://www.laserpay.com/service-api-integrations.html): Integrations with banks, NPCI, Visa, Mastercard, RuPay, CBS, AML, CKYC, DigiLocker, Aadhaar, UPI, NACH, FASTag, AEPS and more
-- [Merchant Enablement](https://www.laserpay.com/service-merchant-enablement.html): Merchant onboarding, PG/PA selection, bank introductions, compliance, certification, go-live support
-- [Banking Consulting](https://www.laserpay.com/service-banking-consulting.html): Payment Aggregator licensing guidance, acquiring bank selection, settlement models, RBI compliance guidance
-- [Managed Technology Services](https://www.laserpay.com/service-managed-services.html): 24x7 monitoring, cloud infrastructure, DevOps, security, API monitoring, AMC support
+- [Payment Platform Development](https://www.laserpay.in/service-payment-platforms.html): Payment gateways, payment aggregation, orchestration, wallets, UPI, BBPS, escrow, collections, disbursements
+- [Banking Solutions](https://www.laserpay.in/service-banking-solutions.html): Internet and mobile banking, digital onboarding, video KYC, corporate banking, digital lending, loan origination
+- [API Integrations](https://www.laserpay.in/service-api-integrations.html): Integrations with banks, NPCI, Visa, Mastercard, RuPay, CBS, AML, CKYC, DigiLocker, Aadhaar, UPI, NACH, FASTag, AEPS and more
+- [Merchant Enablement](https://www.laserpay.in/service-merchant-enablement.html): Merchant onboarding, PG/PA selection, bank introductions, compliance, certification, go-live support
+- [Banking Consulting](https://www.laserpay.in/service-banking-consulting.html): Payment Aggregator licensing guidance, acquiring bank selection, settlement models, RBI compliance guidance
+- [Managed Technology Services](https://www.laserpay.in/service-managed-services.html): 24x7 monitoring, cloud infrastructure, DevOps, security, API monitoring, AMC support
 
 ## Company
 
-- [Services Overview](https://www.laserpay.com/services.html): Full service portfolio hub page
-- [About LaserPay](https://www.laserpay.com/about.html): Positioning, approach, and delivery process
-- [Industries We Serve](https://www.laserpay.com/industries.html): Banks, NBFCs, FinTechs, payment aggregators/gateways, insurance, government, enterprises and more
-- [Success Stories](https://www.laserpay.com/success-stories.html): Case studies (coming soon)
-- [Contact](https://www.laserpay.com/contact.html): Schedule a consultation
+- [Services Overview](https://www.laserpay.in/services.html): Full service portfolio hub page
+- [About LaserPay](https://www.laserpay.in/about.html): Positioning, approach, and delivery process
+- [Industries We Serve](https://www.laserpay.in/industries.html): Banks, NBFCs, FinTechs, payment aggregators/gateways, insurance, government, enterprises and more
+- [Success Stories](https://www.laserpay.in/success-stories.html): Case studies (coming soon)
+- [Contact](https://www.laserpay.in/contact.html): Schedule a consultation
